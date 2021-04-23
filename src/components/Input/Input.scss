@@ -1,0 +1,26 @@
+.input {
+  display: block;
+  width: 400px;
+  padding: 0 1.1rem;
+  border: 1px solid #e7e7e7;
+  border-radius: 16px;
+  background-color: #f8f8f8;
+  outline: none;
+  color: #555555;
+  &::placeholder {
+    color: #e0e0e0;
+  }
+
+  &.small {
+    height: 2rem;
+    font-size: 0.875rem;
+  }
+  &.medium {
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+  &.large {
+    height: 3rem;
+    font-size: 1.25rem;
+  }
+}
