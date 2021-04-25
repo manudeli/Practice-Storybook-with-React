@@ -1,0 +1,8 @@
+.center{display:flex;justify-content:center}
+
+.button{border:none;color:white;padding:15px 32px;text-align:center;text-decoration:none;display:inline-block;font-size:16px;border-radius:16px;cursor:pointer}.button:hover{box-shadow:200px 0 0 0 rgba(0,0,0,0.1) inset}.button:active{box-shadow:200px 0 0 0 rgba(0,0,0,0.4) inset}.button.primary{background-color:#008cba}.button.secondary{background-color:#e7e7e7;color:black}.button.success{background-color:#4caf50}.button.danger{background-color:#f44336}
+
+.input{display:block;width:400px;padding:0 1.1rem;border:1px solid #e7e7e7;border-radius:16px;background-color:#f8f8f8;outline:none;color:#555555}.input::-webkit-input-placeholder{color:#e0e0e0}.input:-ms-input-placeholder{color:#e0e0e0}.input::placeholder{color:#e0e0e0}.input.small{height:2rem;font-size:0.875rem}.input.medium{height:2.5rem;font-size:1rem}.input.large{height:3rem;font-size:1.25rem}
+
+
+/*# sourceMappingURL=main.7339c248.chunk.css.map*/
