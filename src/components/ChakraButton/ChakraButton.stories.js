@@ -13,6 +13,12 @@ export default {
   },
 };
 
+export const Knobs = () => (
+  <Button variantColor="purple" disabled={boolean("Disabled", false)}>
+    {text("Label", "Button Label")}
+  </Button>
+);
+
 const Template = (args) => <Button {...args} />;
 export const Success = Template.bind({});
 Success.args = {
@@ -30,15 +36,9 @@ export const Log = () => (
   <Button
     variantColor="blue"
     onClick={() => {
-      console.log("Button Clicked");
+      console.log("Button Clicked", process.env.STORYBOOK_THEME);
     }}
   >
     Log
-  </Button>
-);
-
-export const Knobs = () => (
-  <Button variantColor="purple" disabled={boolean("Disabled", false)}>
-    {text("Label", "Button Label")}
   </Button>
 );
