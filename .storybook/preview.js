@@ -1,9 +1,10 @@
 import React from "react";
-import { addDecorator } from "@storybook/react";
+import { addDecorator, addParameters } from "@storybook/react";
 import Center from "../src/components/Center/Center";
 import { ThemeProvider, theme, CSSReset, Box } from "@chakra-ui/core";
 import { withConsole } from "@storybook/addon-console";
 import { withKnobs } from "@storybook/addon-knobs";
+import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
 
 // Globally Decorate Story
 addDecorator((story) => <Center>{story()} </Center>);
@@ -37,3 +38,9 @@ export const decorators = [
 
 addDecorator((storyFn, context) => withConsole()(storyFn)(context));
 addDecorator(withKnobs);
+
+addParameters({
+  viewport: {
+    viewports: INITIAL_VIEWPORTS,
+  },
+});
