@@ -1,12 +1,9 @@
 import React from "react";
 import Button from "./Button";
-import Center from "../Center/Center";
 
 export default {
   title: "form/control/Button",
   component: Button,
-  // Locally Decorate Story
-  // decorators: [(story) => <Center>{story()}</Center>],
   args: {
     children: "Button",
   },
